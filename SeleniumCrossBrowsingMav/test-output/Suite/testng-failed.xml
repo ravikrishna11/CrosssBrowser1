@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="4" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <test thread-count="4" name="FIREFOX(failed)" parallel="tests">
+    <parameter name="mBrowser" value="firefox"/>
+    <classes>
+      <class name="testScripts.Test2">
+        <methods>
+          <include name="init"/>
+          <include name="close"/>
+          <include name="intagramTest"/>
+        </methods>
+      </class> <!-- testScripts.Test2 -->
+    </classes>
+  </test> <!-- FIREFOX(failed) -->
+</suite> <!-- Failed suite [Suite] -->
